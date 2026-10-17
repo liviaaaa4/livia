@@ -64,6 +64,7 @@ const KET = {
 
 // ===== UTIL =====
 const LOGO_SRC = "logo.png";
+const WHO_SRC = "who.png";
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const SL = { "Akademik": "Akademik", "Sosial/Menunggu": "Menunggu", "Digital/Komunikasi": "Komunikasi", "Digital/Hiburan": "Hiburan", "Istirahat dan Waktu Luang": "Istirahat", "Membaca dan Aktivitas Audio": "Membaca & Audio" };
 const IC = {
@@ -168,10 +169,10 @@ const about = () => `<section class="tt" id="tentang"><div class="tt-in">
 <div><span class="ci2" style="background:#D79BFF">${ic("cycle", 28, 2)}</span>Memicu obesitas dan gangguan metabolisme</div>
 <div><span class="ci2" style="background:#F6F7A6">${ic("mind", 28, 2)}</span>Menurunkan kesehatan mental (meningkatkan stres, kecemasan, dan rasa lelah)</div></div>
 <p class="note" style="margin-top:14px">Hubungan ini berupa keterkaitan, jadi bukan berarti semua orang yang banyak duduk pasti sakit.</p></article>
-<article id="s4" class="cd c4"><div class="cd-h"><span class="nb">4</span><h3>Anjuran WHO</h3></div>
-<p>World Health Organization (WHO) menyarankan agar kita membatasi waktu sedentari dan lebih banyak bergerak setiap hari.</p>
-<h4>Rekomendasi WHO</h4><p>Kurangi waktu duduk lama dan lakukan aktivitas fisik dengan intensitas sedang minimal 150 menit per minggu (untuk orang dewasa).</p>
-<div class="cd-b"><div><h4>Tips sederhana:</h4><ul class="tips"><li>Berdiri atau berjalan setiap 30–60 menit</li><li>Gunakan tangga daripada lift</li><li>Lakukan peregangan ringan</li></ul></div><div class="il il4"><svg viewBox="0 0 150 110" role="img" aria-label="Ilustrasi dua orang bersepeda"><g fill="none" stroke="#172A3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="26" cy="82" r="19"/><circle cx="68" cy="82" r="19"/><path d="M26 82l14-24h22l6 24M40 58l12 24M36 52h12"/><circle cx="92" cy="82" r="19"/><circle cx="130" cy="82" r="19"/><path d="M92 82l12-24h20l6 24M104 58l12 24M100 52h12"/></g><path d="M40 30l16 18-9 6-16-12z" fill="#D9534F"/><circle cx="40" cy="24" r="8" fill="#F1C9A5"/><path d="M104 30l16 18-9 6-16-12z" fill="#4D9C94"/><circle cx="104" cy="24" r="8" fill="#F1C9A5"/><path d="M32 22c2-8 12-10 16-4-5-2-11-1-16 4z" fill="#233046"/><path d="M96 22c2-8 12-10 16-4-5-2-11-1-16 4z" fill="#233046"/></svg></div></div></article>
+<article id="s4" class="cd c4"><div class="cd-h"><span class="nb">4</span><h3>Anjuran WHO</h3><img class="who-img" src="${WHO_SRC}" alt="Ilustrasi empat orang berolahraga" loading="lazy"></div>
+<div class="whos"><div class="wbox"><b>150 – 300</b><span>Menit per minggu aktivitas aerobik intensitas sedang untuk orang dewasa.</span></div>
+<div class="wbox"><b>60</b><span>Menit per hari, rata-rata, untuk anak dan remaja (5–17 tahun), intensitas sedang hingga berat.</span></div></div>
+<p class="wnote">WHO juga menyarankan membatasi waktu sedentari dan menggantinya dengan aktivitas fisik dalam intensitas apa pun, bahkan gerakan ringan pun dihitung.</p></article>
 <div class="go" id="cta"><div><h3>Sekarang, giliran kebiasaanmu</h3><p>20 pertanyaan singkat tentang durasi duduk dan rebahanmu dalam 7 hari terakhir.</p></div><button class="pl" onclick="showForm()">Lanjut tes ${ARR}</button></div>
 <div class="small">Rujukan: WHO, <i>Guidelines on Physical Activity and Sedentary Behaviour</i> (2020); Sedentary Behaviour Research Network, konsensus terminologi (2017). Informasi ini bersifat edukasi dan bukan pengganti saran tenaga kesehatan.</div>
 </div></div></section>`;

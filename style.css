@@ -300,3 +300,17 @@ body{font-family:"Outfit","Segoe UI",system-ui,sans-serif}
 .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:center;margin-top:16px;font-size:.8rem;line-height:1.4}
 .ci2{width:56px;height:56px;border-radius:50%;margin:0 auto 8px;display:grid;place-items:center;color:var(--navy);box-shadow:2px 3px 0 rgba(0,0,0,.18)}
 @media(max-width:430px){.cd-b{gap:10px}.il{width:38%}.duo{gap:10px}.duo>div{padding:10px}.trio{gap:8px;font-size:.72rem}}
+
+/* ruang di bawah halaman agar tombol tidak tertutup badge "Powered by Netlify" (paket gratis) */
+#app:not(.land){padding-bottom:84px}
+
+/* bagian Anjuran WHO mengikuti desain Canva */
+.cd.c4{background:#C8FFCE}
+.cd.c4 .cd-h{align-items:flex-start}
+.who-img{margin-left:auto;width:clamp(96px,28%,150px);height:auto;flex:none;margin-top:-6px}
+.whos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 16px}
+.wbox{background:#BBDCF6;border:1px solid rgba(23,42,58,.3);border-radius:10px;padding:18px 14px;text-align:center}
+.wbox b{display:block;font-family:"Young Serif","Fraunces",Georgia,serif;font-weight:400;font-size:2.3rem;line-height:1.1;margin-bottom:8px}
+.wbox span{display:block;font-size:.84rem;line-height:1.5}
+.wnote{font-size:.84rem;line-height:1.6;margin:0}
+@media(max-width:430px){.whos{gap:10px}.wbox{padding:14px 10px}.wbox b{font-size:1.8rem}.wbox span{font-size:.74rem}.wnote{font-size:.76rem}}
